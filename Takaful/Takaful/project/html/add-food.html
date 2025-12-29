@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إضافة طعام فائض - تكافل</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/login-style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <div class="logo-text">
+                        <h1>تكافل</h1>
+                        <p>منصة التبرع بالفائض الغذائي</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <nav>
+        <div class="container nav-container">
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="fas fa-home"></i> الرئيسية</a></li>
+                <li><a href="about.html"><i class="fas fa-info-circle"></i> عن المنصة</a></li>
+                <li><a href="food-available.html"><i class="fas fa-utensils"></i> الطعام المتاح</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i> اتصل بنا</a></li>
+            </ul>
+            <div class="auth-buttons">
+                </div>
+        </div>
+    </nav>
+
+    <main class="page-content" style="padding: 40px 0; min-height: 60vh;">
+        <div class="container">
+            <div class="auth-container" style="max-width: 800px; margin: 0 auto;">
+                
+                <div class="form-header" style="text-align: center; margin-bottom: 30px;">
+                    <h2>تبرع بالطعام الفائض</h2>
+                    <p>أدخل تفاصيل الوجبات التي تود التبرع بها للجمعيات الخيرية</p>
+                </div>
+
+                <form id="addFoodForm" class="auth-form active" style="padding: 20px;">
+                    
+                    <div class="form-group">
+                        <label for="foodTitle">اسم الوجبة / العنوان</label>
+                        <div class="input-with-icon">
+                            <input type="text" id="foodTitle" placeholder="مثال: وجبات أرز مع دجاج" required>
+                            <i class="fas fa-heading"></i>
+                        </div>
+                    </div>
+
+                    <div class="form-group" style="display: flex; gap: 20px;">
+                        <div style="flex: 1;">
+                            <label for="foodType">التصنيف</label>
+                            <div class="input-with-icon">
+                                <select id="foodType" required>
+                                    <option value="" disabled selected>اختر التصنيف</option>
+                                    <option value="MAIN_DISH">أطباق رئيسية</option>
+                                    <option value="APPETIZER">مقبلات</option>
+                                    <option value="DESSERT">حلويات</option>
+                                    <option value="BAKERY">مخبوزات</option>
+                                    <option value="DRINK">مشروبات</option>
+                                    <option value="OTHER">أخرى</option>
+                                </select>
+                                <i class="fas fa-list"></i>
+                            </div>
+                        </div>
+                        <div style="flex: 1;">
+                            <label for="foodQuantity">الكمية (عدد الوجبات)</label>
+                            <div class="input-with-icon">
+                                <input type="number" id="foodQuantity" placeholder="مثال: 50" min="1" required>
+                                <i class="fas fa-sort-numeric-up"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="expiryDate">تاريخ ووقت انتهاء الصلاحية</label>
+                        <div class="input-with-icon">
+                            <input type="datetime-local" id="expiryDate" required>
+                            <i class="fas fa-clock"></i>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pickupTime">وقت الاستلام المفضل</label>
+                        <div class="input-with-icon">
+                            <input type="datetime-local" id="pickupTime" required>
+                            <i class="fas fa-truck-loading"></i>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="description">وصف إضافي (اختياري)</label>
+                        <div class="input-with-icon">
+                            <textarea id="description" rows="3" placeholder="أضف أي تفاصيل أخرى، مثل المكونات أو طريقة الحفظ..." style="width: 100%; padding: 15px 40px 15px 20px; border: 2px solid #e0e0e0; border-radius: 12px; font-family: 'Tajawal';"></textarea>
+                            <i class="fas fa-align-right" style="top: 25px;"></i>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 20px;">
+                        <i class="fas fa-plus-circle"></i> نشر التبرع
+                    </button>
+
+                </form>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>عن تكافل</h3>
+                    <p>منصة إلكترونية تهدف إلى الحد من هدر الطعام عن طريق ربط المطاعم التي لديها فائض غذائي بالجمعيات الخيرية.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>روابط سريعة</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fas fa-chevron-left"></i> الرئيسية</a></li>
+                        <li><a href="food-available.html"><i class="fas fa-chevron-left"></i> الطعام المتاح</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>معلومات الاتصال</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-map-marker-alt"></i> عمّان - الأردن</a></li>
+                        <li><a href="mailto:info@takafel.com"><i class="fas fa-envelope"></i> info@takafel.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>جميع الحقوق محفوظة &copy; 2025 منصة تكافل</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script type="module" src="../js/navbar.js"></script>
+    <script type="module" src="../js/add-food.js"></script>
+</body>
+</html>
