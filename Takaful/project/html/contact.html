@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>اتصل بنا - تكافل</title>
+
+  <!-- نفس روابط الهوم عشان نفس الخط والستايل -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+  <!-- نفس الهيدر تبع الهوم -->
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">
+          <div class="logo-icon">
+            <i class="fas fa-hands-helping"></i>
+          </div>
+          <div class="logo-text">
+            <h1>تكافل</h1>
+            <p>منصة التبرع بالفائض الغذائي</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- نفس الناف + تفعيل اتصل بنا -->
+  <nav>
+    <div class="container nav-container">
+      <ul class="nav-links">
+        <li><a href="index.html"><i class="fas fa-home"></i> الرئيسية</a></li>
+        <li><a href="about.html"><i class="fas fa-info-circle"></i> عن المنصة</a></li>
+        <li><a href="food-available.html"><i class="fas fa-utensils"></i> الطعام المتاح</a></li>
+        <li><a href="#" class="active"><i class="fas fa-envelope"></i> اتصل بنا</a></li>
+      </ul>
+
+      <div class="auth-buttons">
+        <a href="login.html" class="btn btn-outline">
+          <i class="fas fa-sign-in-alt"></i> تسجيل الدخول
+        </a>
+        <a href="register.html" class="btn btn-primary">
+          <i class="fas fa-user-plus"></i> تسجيل جديد
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- محتوى الصفحة بنفس كلاسّات الستايل الأساسي -->
+  <main class="container">
+    <section class="page" style="padding-top: 60px;">
+      <div class="section-header">
+        <h2>اتصل بنا</h2>
+        <p>إذا عندك استفسار أو اقتراح، ابعثلنا رسالة وراح نرد عليك بأسرع وقت.</p>
+      </div>
+
+      <div class="food-grid">
+        <div class="card">
+          <div class="card-header">
+            <div class="card-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <h3>الموقع</h3>
+          </div>
+          <p>الأردن - عمّان</p>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <div class="card-icon"><i class="fas fa-phone"></i></div>
+            <h3>الهاتف</h3>
+          </div>
+          <p dir="ltr">+962 7X XXX XXXX</p>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <div class="card-icon"><i class="fas fa-envelope"></i></div>
+            <h3>البريد الإلكتروني</h3>
+          </div>
+          <p dir="ltr">contact@takaful.com</p>
+        </div>
+      </div>
+
+      <div class="form-container" style="margin-top: 40px;">
+        <form>
+          <div class="form-group">
+            <label for="name">الاسم</label>
+            <div class="input-with-icon">
+              <input type="text" id="name" placeholder="اكتب اسمك" required>
+              <i class="fas fa-user"></i>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">البريد الإلكتروني</label>
+            <div class="input-with-icon">
+              <input type="email" id="email" placeholder="example@mail.com" required>
+              <i class="fas fa-at"></i>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="message">الرسالة</label>
+            <div class="input-with-icon">
+              <textarea id="message" rows="5" placeholder="اكتب رسالتك..." required></textarea>
+              <i class="fas fa-comment-dots"></i>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block">
+            <i class="fas fa-paper-plane"></i> إرسال
+          </button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>عن تكافل</h3>
+                    <p>منصة إلكترونية تهدف إلى الحد من هدر الطعام عن طريق ربط المطاعم التي لديها فائض غذائي بالجمعيات الخيرية.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>روابط سريعة</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fas fa-chevron-left"></i> الرئيسية</a></li>
+                        <li><a href="about.html"><i class="fas fa-chevron-left"></i> عن المنصة</a></li>
+                        <li><a href="food-available.html"><i class="fas fa-chevron-left"></i> الطعام المتاح</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-left"></i> اتصل بنا</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>معلومات الاتصال</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-map-marker-alt"></i> عمّان - المملكة الأردنية الهاشميّة</a></li>
+                        <li><a href="tel:+962790000000"><i class="fas fa-phone"></i> +962 79 000 0000</a></li>
+                        <li><a href="mailto:info@takafel.com"><i class="fas fa-envelope"></i> info@takafel.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>جميع الحقوق محفوظة &copy; 2023 منصة تكافل</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- زر عائم للمساعدة -->
+    <div class="floating-icon" onclick="alert('مرحباً! كيف يمكنني مساعدتك؟')">
+        <i class="fas fa-question"></i>
+    </div>
+        <script type="module" src="../js/navbar.js"></script>
+
+</body>
+</html>
