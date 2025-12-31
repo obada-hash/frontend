@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل الدخول - منصة تكافل</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    <!-- ربط ملف CSS الرئيسي -->
+    <link rel="stylesheet" href="../css/login-style.css">
+</head>
+<body>
+    <!-- الهيدر: شعار المنصة ورابط العودة للصفحة الرئيسية -->
+    <header class="login-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <div class="logo-text">
+                        <h1>تكافل</h1>
+                        <p>منصة التبرع بالفائض الغذائي</p>
+                    </div>
+                </div>
+                <a href="index.html" class="back-home">
+                    <i class="fas fa-arrow-right"></i> العودة للرئيسية
+                </a>
+            </div>
+        </div>
+    </header>
+    
+    <!-- محتوى الصفحة الرئيسي: قسم التوثيق -->
+    <div class="page-content">
+        <div class="container">
+            <div class="auth-container">
+                <!-- قسم الصورة التوضيحية -->
+                <div class="auth-illustration">
+                    <div class="illustration-content">
+                        <div class="illustration-icon">
+                            <i class="fas fa-hands-helping"></i>
+                        </div>
+                        <h2>انضم إلى مجتمع التكافل</h2>
+                        <p>سجل في منصة تكافل وساهم في الحد من هدر الطعام ومساعدة المحتاجين</p>
+                    </div>
+                </div>
+                
+                <!-- قسم النماذج: تسجيل الدخول -->
+                <div class="auth-form-container">
+                    <div class="form-header">
+                        <h2>مرحباً بعودتك!</h2>
+                        <p>سجل الدخول إلى حسابك للوصول إلى جميع ميزات المنصة</p>
+                    </div>     
+                    <!-- نموذج تسجيل الدخول: للمطاعم والجمعيات -->
+                    <form id="loginForm" class="auth-form active">
+                        <div class="form-group">
+                            <label for="loginUserType">اختر نوع الحساب</label>
+                            <div class="input-with-icon">
+                                <select id="loginUserType" required>
+                                    <option value="" selected disabled>اختر نوع الحساب</option>
+                                    <option value="restaurant">مطعم / فندق</option>
+                                    <option value="charity">جمعية خيرية</option>
+                                </select>
+                                <i class="fas fa-user-tag"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="loginEmail">البريد الإلكتروني</label>
+                            <div class="input-with-icon">
+                                <input type="email" id="loginEmail" placeholder="أدخل بريدك الإلكتروني" required>
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="loginPassword">كلمة المرور</label>
+                            <div class="input-with-icon">
+                                <input type="password" id="loginPassword" placeholder="أدخل كلمة المرور" required>
+                                <i class="fas fa-lock"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group" style="display: flex; justify-content: space-between; align-items: center;">
+                            <div style="display: flex; align-items: center;">
+                                <input type="checkbox" id="rememberMe">
+                                <label for="rememberMe" style="margin-right: 8px;">تذكرني</label>
+                            </div>
+                            <a href="forgot-password.html" style="color: var(--primary); text-decoration: none;">نسيت كلمة المرور؟</a>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-sign-in-alt"></i> تسجيل الدخول
+                        </button>
+                        
+                        <div class="form-footer">
+                            <p>ليس لديك حساب؟ <a href="register.html">سجل الآن</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- الفوتر: معلومات الاتصال والروابط -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <!-- قسم معلومات المنصة -->
+                <div class="footer-column">
+                    <h3>عن تكافل</h3>
+                    <p>منصة إلكترونية تهدف إلى الحد من هدر الطعام عن طريق ربط المطاعم التي لديها فائض غذائي بالجمعيات الخيرية.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <!-- قسم الروابط السريعة -->
+                <div class="footer-column">
+                    <h3>روابط سريعة</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fas fa-chevron-left"></i> الرئيسية</a></li>
+                        <li><a href="about.html"><i class="fas fa-chevron-left"></i> عن المنصة</a></li>
+                        <li><a href="food-available.html"><i class="fas fa-chevron-left"></i> الطعام المتاح</a></li>
+                        <li><a href="contact.html"><i class="fas fa-chevron-left"></i> اتصل بنا</a></li>
+                    </ul>
+                </div>
+                
+                <!-- قسم معلومات الاتصال -->
+                <div class="footer-column">
+                    <h3>معلومات الاتصال</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-map-marker-alt"></i> عمّان - المملكة الأردنية الهاشميّة</a></li>
+                        <li><a href="tel:+962790000000"><i class="fas fa-phone"></i> +962 79 000 0000</a></li>
+                        <li><a href="mailto:info@takafel.com"><i class="fas fa-envelope"></i> info@takafel.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- حقوق النشر -->
+            <div class="copyright">
+                <p>جميع الحقوق محفوظة &copy; 2025 منصة تكافل</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- ربط ملفات JavaScript -->
+    <script type="module" src="../js/login-script.js"></script>
+    <script type="module" src="../js/navbar.js"></script>
+</body>
+</html>
